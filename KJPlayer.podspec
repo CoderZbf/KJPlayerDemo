@@ -45,7 +45,7 @@ Pod::Spec.new do |s|
   s.subspec 'IJKPlayer' do |jk|
     jk.source_files = "Sources/IJKPlayer/*.{h,m}"
     jk.dependency 'KJPlayer/Common'
-    jk.dependency 'IJKMediaFramework'
+    ##jk.dependency 'IJKMediaFramework'
     jk.libraries = 'c++', 'z', 'bz2', 'iconv'
     jk.ios.deployment_target = '9.0'
     jk.pod_target_xcconfig  = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
