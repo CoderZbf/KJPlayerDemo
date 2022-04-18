@@ -261,7 +261,7 @@ PLAYER_COMMON_FUNCTION_PROPERTY PLAYER_COMMON_UI_PROPERTY
 }
 
 #pragma mark - public method
-/// 准备播放 
+/// 准备播放
 - (void)kj_play{
     if (self.player == nil || self.tryLooked) return;
     [super kj_play];
@@ -296,6 +296,10 @@ PLAYER_COMMON_FUNCTION_PROPERTY PLAYER_COMMON_UI_PROPERTY
     [self.player shutdown];
     [self kj_destroyPlayer];
     self.state = KJPlayerStateStopped;
+}
+
+- (void)kj_record {
+    
 }
 
 #pragma mark - setter
